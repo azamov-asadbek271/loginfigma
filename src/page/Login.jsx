@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 
 function Login() {
   return (
-    <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse ">
+    <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse max-md:gap-3 ">
       {/* password */}
       <div className="w-1/2 flex justify-center items-center max-md:w-full">
         <div className=" px-5 w-[410px] max-md:w-full">
@@ -33,20 +33,27 @@ function Login() {
             Sign in
           </button>
           <div>
-            <div className="flex items-center justify-center mt-4">
+            <div className="flex items-center justify-center mt-4 gap-2">
               <div className="h-px bg-gray-700 w-1/2"></div>
-              <p className="mx-4">or</p>
+              <p className="mx-4 flex max-md:hidden">or</p>
+              <p className="hidden max-md:flex mx-4 w-48">Or sign in with</p>
               <div className="h-px bg-gray-700 w-1/2"></div>
             </div>
           </div>
-          <div className="mt-3 flex flex-col gap-5 max-md:flex-wrap">
-            <button className="btn  flex items-center w-full bg-[#F3F9FA]">
+          <div className="mt-3 flex gap-5  ">
+            <button className="btn  flex items-center w-full bg-[#F3F9FA] max-md:w-1/2">
               <FcGoogle className="text-xl" />
-              <span className="text-xl">Sign in with Google</span>
+              <span className="text-xl flex max-md:hidden">
+                Sign in with Google
+              </span>
+              <span className="hidden max-md:flex">Google</span>
             </button>
-            <button className="btn  flex items-center w-full bg-[#F3F9FA]">
+            <button className="btn  flex items-center w-full bg-[#F3F9FA] max-md:w-1/2">
               <FaFacebook className="text-xl text-blue-500 " />
-              <span className="text-xl">Sign in with Facebook</span>
+              <span className="text-xl flex max-md:hidden">
+                Sign in with Facebook
+              </span>
+              <span className="hidden max-md:flex">Facebook</span>
             </button>
           </div>
           <p className="text-center mt-5 flex  justify-center gap-1">
@@ -57,7 +64,11 @@ function Login() {
       </div>
       {/* img */}
       <div className="">
-        <img className=" h-full w-full max-md:h-[180px] object-center" src="./images/manzara.png" alt="" />
+        <img
+          className=" h-full w-full max-md:h-[180px] object-center"
+          src="./images/manzara.png"
+          alt=""
+        />
       </div>
     </div>
   );
