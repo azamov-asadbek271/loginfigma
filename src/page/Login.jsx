@@ -3,16 +3,17 @@ import InputForm from '../components/InputForm';
 
 function Login() {
   return (
-    <div className="con-align flex justify-between gap-2 ">
+    <div className=" con-align h-[100vh] flex justify-between gap-2 ">
       {/* password */}
       <div>
         <h3> Welcome Back</h3>
         <p>Sign in to start managing your projects.</p>
-        <InputForm />
+        <InputForm type="email" label=" Email:" />
+        <InputForm type="password" label=" Password:" />
       </div>
       {/* img */}
-      <div>
-        <img className='h-full w-full' src="./images/manzara.png" alt="" />
+      <div className="">
+        <img className=" h-full w-full" src="./images/manzara.png" alt="" />
       </div>
     </div>
   );
