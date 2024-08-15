@@ -8,7 +8,7 @@ function Login() {
     <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse ">
       {/* password */}
       <div className="w-1/2 flex justify-center items-center max-md:w-full">
-        <div className=" px-5 w-[410px] ">
+        <div className=" px-5 w-[410px] max-md:w-full">
           <h3 className="text-[28px] leading-9 mb-2  font-bold">
             Welcome Back
           </h3>
@@ -39,7 +39,7 @@ function Login() {
               <div className="h-px bg-gray-700 w-1/2"></div>
             </div>
           </div>
-          <div className="mt-3 flex flex-col gap-5">
+          <div className="mt-3 flex flex-col gap-5 max-md:flex-wrap">
             <button className="btn  flex items-center w-full bg-[#F3F9FA]">
               <FcGoogle className="text-xl" />
               <span className="text-xl">Sign in with Google</span>
