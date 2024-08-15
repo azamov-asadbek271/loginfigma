@@ -3,7 +3,7 @@ import Login from './page/Login';
 
 function App() {
   return (
-    <div className="bg-slate-300 ">
+    <div>
       <Login />
     </div>
   );
