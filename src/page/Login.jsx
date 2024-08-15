@@ -7,7 +7,7 @@ function Login() {
   return (
     <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse ">
       {/* password */}
-      <div className="w-1/2 flex justify-center items-center">
+      <div className="w-1/2 flex justify-center items-center max-md:w-full">
         <div className=" px-5 w-[410px] ">
           <h3 className="text-[28px] leading-9 mb-2  font-bold">
             Welcome Back
