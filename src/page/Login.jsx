@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 
 function Login() {
   return (
-    <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse max-md:gap-3 ">
+    <div className=" con-align h-[100vh] flex justify-between gap-2 max-md:flex-col-reverse max-md:gap-3 max-md:h-full">
       {/* password */}
       <div className="w-1/2 flex justify-center items-center max-md:w-full">
         <div className=" px-5 w-[410px] max-md:w-full">
