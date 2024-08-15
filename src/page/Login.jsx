@@ -40,7 +40,7 @@ function Login() {
               <div className="h-px bg-gray-700 w-1/2"></div>
             </div>
           </div>
-          <div className="mt-3 flex gap-5 md:flex-col ">
+          <div className="mt-3 flex justify-between gap-2 md:flex-col ">
             <button className="btn  flex items-center w-full bg-[#F3F9FA] max-md:w-1/2">
               <FcGoogle className="text-xl" />
               <span className="text-xl flex max-md:hidden">
